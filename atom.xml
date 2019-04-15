@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-15T15:07:00.060Z</updated>
+  <updated>2019-04-15T15:15:19.534Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,25 +17,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>article title</title>
-    <link href="http://yoursite.com/2019/04/15/article-title-1/"/>
-    <id>http://yoursite.com/2019/04/15/article-title-1/</id>
-    <published>2019-04-15T15:01:50.000Z</published>
-    <updated>2019-04-15T15:07:00.060Z</updated>
+    <title>today</title>
+    <link href="http://yoursite.com/2019/04/15/today/"/>
+    <id>http://yoursite.com/2019/04/15/today/</id>
+    <published>2019-04-15T15:14:00.000Z</published>
+    <updated>2019-04-15T15:15:19.534Z</updated>
     
-    <content type="html"><![CDATA[<p>这是测试用的第一篇文章哦<del>~</del></p><ul><li><p>今天是2019-4-15</p></li><li><p>天气阴</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>今天是2019-4-15，天气阴，20°，吹和缓东北风</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;这是测试用的第一篇文章哦&lt;del&gt;~&lt;/del&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;今天是2019-4-15&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;天气阴&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+        &lt;p&gt;今天是2019-4-15，天气阴，20°，吹和缓东北风&lt;/p&gt;
 
       
     

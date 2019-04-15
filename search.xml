@@ -3,15 +3,9 @@
   
     
     <entry>
-      <title><![CDATA[article title]]></title>
-      <url>/2019/04/15/article-title-1/</url>
-      <content type="html"><![CDATA[<p>这是测试用的第一篇文章哦<del>~</del></p>
-<ul>
-<li><p>今天是2019-4-15</p>
-</li>
-<li><p>天气阴</p>
-</li>
-</ul>
+      <title><![CDATA[today]]></title>
+      <url>/2019/04/15/today/</url>
+      <content type="html"><![CDATA[<p>今天是2019-4-15，天气阴，20°，吹和缓东北风</p>
 ]]></content>
       
         
