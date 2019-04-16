@@ -3,6 +3,15 @@
   
     
     <entry>
+      <title><![CDATA[new story]]></title>
+      <url>/2019/04/16/new-story/</url>
+      <content type="html"><![CDATA[<p>hello world，this is test</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[today]]></title>
       <url>/2019/04/15/today/</url>
       <content type="html"><![CDATA[<p>今天是2019-4-15，天气阴，20°，吹和缓东北风</p>
