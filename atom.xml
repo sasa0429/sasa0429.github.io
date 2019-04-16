@@ -39,20 +39,6 @@
   </entry>
   
   <entry>
-    <title>article title</title>
-    <link href="http://yoursite.com/2017/12/03/article-title/"/>
-    <id>http://yoursite.com/2017/12/03/article-title/</id>
-    <published>2017-12-03T14:59:01.000Z</published>
-    <updated>2017-12-03T14:59:01.741Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
     <link href="http://yoursite.com/2017/12/03/hello-world/"/>
     <id>http://yoursite.com/2017/12/03/hello-world/</id>
