@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2019/04/17/JavaScript%E5%9F%BA%E7%A1%80/</loc>
+    
+    <lastmod>2019-04-17T15:25:04.436Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/04/16/new-story/</loc>
+    
+    <lastmod>2019-04-16T15:43:30.295Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/04/15/today/</loc>
     
     <lastmod>2019-04-15T15:15:19.534Z</lastmod>
