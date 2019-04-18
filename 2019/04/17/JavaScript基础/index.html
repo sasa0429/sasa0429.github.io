@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="码田半亩">
 <meta property="og:description" content="初步认识JavaScriptJavaScript简介JavaScript 是一门脚本语言。计算机中其实有很多的语言，总体我们分为以下几类：  汇编语言 脚本语言 机器语言 高级语言  脚本语言的特点：对比其他类型语言编程速度更快，不需要编译、简单、易学、易用、灵活性高。当然这样的高灵活性是有牺牲的，运行速度可能更慢，运行时更消耗资源。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-18T14:58:38.649Z">
+<meta property="og:updated_time" content="2019-04-18T15:52:41.375Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript基础">
 <meta name="twitter:description" content="初步认识JavaScriptJavaScript简介JavaScript 是一门脚本语言。计算机中其实有很多的语言，总体我们分为以下几类：  汇编语言 脚本语言 机器语言 高级语言  脚本语言的特点：对比其他类型语言编程速度更快，不需要编译、简单、易学、易用、灵活性高。当然这样的高灵活性是有牺牲的，运行速度可能更慢，运行时更消耗资源。">
@@ -401,7 +401,7 @@
 </ul>
 <h1 id="JavaScript-基础语法"><a href="#JavaScript-基础语法" class="headerlink" title="JavaScript 基础语法"></a>JavaScript 基础语法</h1><h3 id="JavaScript-应该放在什么位置？"><a href="#JavaScript-应该放在什么位置？" class="headerlink" title="JavaScript 应该放在什么位置？"></a>JavaScript 应该放在什么位置？</h3><ul>
 <li><p>行间 JS</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div onclick=&quot;alert(&apos;我爱JavaScrip！&apos;)&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">onclick</span>=<span class="string">"alert('我爱JavaScrip！')"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>优势<ul>
 <li>直接作用于当前元素</li>
@@ -415,7 +415,7 @@
 </ul>
 </li>
 <li><p>内部 JS</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">//这里放置js的代码</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line"><span class="comment">//这里放置js的代码</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>优势<ul>
 <li>代码分离清晰</li>
@@ -431,7 +431,7 @@
 </ul>
 </li>
 <li><p>外部 JS</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;main.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=<span class="string">"main.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>优势<ul>
 <li>代码分离彻底</li>
@@ -446,6 +446,120 @@
 </ul>
 </li>
 </ul>
+<h3 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h3><ul>
+<li>语句（statement）是为了完成某种任务而进行的操作，比如下面就是一行赋值语句</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span> + <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>这条语句先用<code>var</code>运算符，声明了变量a，然后将 1+2 的运算结果赋值给变量a</li>
+<li>JavaScript中语句以<code>;</code>结束，一行可以包含多条语句，如果省略分号不会产生语法错误，解释器会自动判断语句结束</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="number">1</span> + <span class="number">2</span></span><br><span class="line"><span class="keyword">var</span> diff = <span class="number">3</span> - <span class="number">4</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><ul>
+<li>单行注释</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//这里是单行注释内容</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>多行注释</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	这里是多行注释内容</span></span><br><span class="line"><span class="comment">	第二行</span></span><br><span class="line"><span class="comment">	第三行</span></span><br><span class="line"><span class="comment">	···</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<h3 id="script标签上的属性"><a href="#script标签上的属性" class="headerlink" title="script标签上的属性"></a>script标签上的属性</h3><p>两个我都见过，到底应该写哪个？</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">"text/javascript"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line">&lt;script&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p><strong>type属性</strong>表示编写代码使用的脚本语言的内容类型（学术语：MIME 类型）。</p>
+<p>从 Html5 开始，可以省略，如果是 script 标签，默认为 type = “text/javascript” , 同理 css 也是一样。<strong>但是如果希望向下兼容低版本浏览器，那么建议还是加上</strong>。</p>
+<h3 id="获取元素"><a href="#获取元素" class="headerlink" title="获取元素"></a>获取元素</h3><ul>
+<li>document.getElementById(‘ ID ‘)<ul>
+<li>通过指定 ID 获取元素；</li>
+<li>返回第一个符合条件的元素；</li>
+<li>如果找不到匹配项，则返回 <code>null</code>；</li>
+<li>只有 document 下存在 getElementById ；</li>
+</ul>
+</li>
+<li>document / parent.querySelector(‘选择器’)<ul>
+<li>通过指定选择器获取元素；</li>
+<li>返回第一个符合条件的元素；</li>
+<li>如果找不到匹配项，则返回 <code>null</code>；</li>
+<li>IE8 以下不可以使用；</li>
+</ul>
+</li>
+</ul>
+<p>注意！！JS是区分大小写的，所以千万大小写千万不要打错</p>
+<h3 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(要打印的内容)</span><br></pre></td></tr></table></figure>
+<h3 id="script标签最合适的放置位置"><a href="#script标签最合适的放置位置" class="headerlink" title="script标签最合适的放置位置"></a>script标签最合适的放置位置</h3><p>页面读到 标签的时候开始解析页面。当页面结构未生成的时候，在 标签中的 JS 代码如果获取元素，将获取失败。</p>
+<p><strong>两种解决方案</strong></p>
+<ol>
+<li>在 中的JS代码，放置在 window.onload（等待窗口加载完成） 事件中。</li>
+<li>放在 标签前，让 HTML 结构先行加载完成。</li>
+</ol>
+<p><strong>注意事项</strong></p>
+<p>如果 JS 的代码比较庞大，需要较长的时间读取，会影响页面的加载，造成页面长时间空白。</p>
+<p>从用户体验的角度来说，我们应该避免这样的情况，长时间空白会让用户觉得打开速度很慢，从而造成用户流失。</p>
+<h3 id="给元素绑定事件"><a href="#给元素绑定事件" class="headerlink" title="给元素绑定事件"></a>给元素绑定事件</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ele.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">//点击后要做的事情</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    元素.事件 = function()&#123;</span></span><br><span class="line"><span class="comment">        //点击后要做的事情</span></span><br><span class="line"><span class="comment">    &#125;;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>ele —— 需要绑定事件的元素</li>
+<li>onclick —— 点击事件</li>
+</ul>
+<h3 id="操作元素的样式"><a href="#操作元素的样式" class="headerlink" title="操作元素的样式"></a>操作元素的样式</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ele.style.background = <span class="string">'red'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	元素.样式.样式名 = '值';</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>ele —— 需要改变样式的元素</li>
+<li>style —— 样式</li>
+<li>background —— 具体的样式名背景</li>
+<li>red —— 样式名对应的值，需要加上 ‘ ‘ (引号) </li>
+</ul>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>变量用于存储数据。</p>
+<p>在使用变量之前，需要先创建变量。</p>
+<p><strong>声明变量步骤</strong></p>
+<ul>
+<li>使用关键字声明变量（关键字：js中定义好的有一定特殊含义的单词）<ul>
+<li><code>var</code></li>
+</ul>
+</li>
+<li>准备一个变量名</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a; <span class="comment">//声明一个名字为 a 的变量</span></span><br><span class="line"><span class="comment">//var 变量名；</span></span><br></pre></td></tr></table></figure>
+<p><strong>对变量进行赋值</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">10</span>;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	变量名 = 数据   ---》  这个过程叫做赋值</span></span><br><span class="line"><span class="comment">	当我们需要用到 10 的时候，就可以使用 a 代替</span></span><br><span class="line"><span class="comment">	</span></span><br><span class="line"><span class="comment">	10 * 10 ---》  a * a</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<p><strong>合并 声明 和 赋值 两个步骤</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">10</span>; </span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	var 变量名 = 数据 ;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<p>当只声明变量，没有赋值的时候，默认值为undefined</p>
+<h4 id="变量的好处"><a href="#变量的好处" class="headerlink" title="变量的好处"></a>变量的好处</h4><ul>
+<li>简化代码，增强可读性</li>
+<li>可以复用</li>
+</ul>
+<h4 id="变量命名规则"><a href="#变量命名规则" class="headerlink" title="变量命名规则"></a>变量命名规则</h4><p>名字也不可以随随便便取哦～，像是 id 和 class 的命名一样，变量名也有属于自己的规则。</p>
+<ul>
+<li>不允许数字开头</li>
+<li>不允许使用关键字和保留字</li>
+<li>允许是字母，数字，下划线(_)，美元符($)任意组合而成</li>
+<li>JavaScript 的变量名区分大小写</li>
+</ul>
+<p><strong>如果不符合规范将出现如下报错信息：</strong></p>
+<p><code>Uncaught SyntaxError: Invalid or unexpected token</code></p>
+<p>语法错误：标记无效或意外</p>
+<h4 id="关键字和保留字"><a href="#关键字和保留字" class="headerlink" title="关键字和保留字"></a>关键字和保留字</h4><ul>
+<li><p>关键字：当前语法中正在使用的单词</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Lexical_grammar#%E5%85%B3%E9%94%AE%E5%AD%97" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Lexical_grammar#%E5%85%B3%E9%94%AE%E5%AD%97</a></p>
+</li>
+<li><p>保留字：将来可能在语法中使用的单词</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Lexical_grammar#%E6%9C%AA%E6%9D%A5%E4%BF%9D%E7%95%99%E5%85%B3%E9%94%AE%E5%AD%97" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Lexical_grammar#%E6%9C%AA%E6%9D%A5%E4%BF%9D%E7%95%99%E5%85%B3%E9%94%AE%E5%AD%97</a></p>
+</li>
+</ul>
+<h4 id="变量的命名风格"><a href="#变量的命名风格" class="headerlink" title="变量的命名风格"></a>变量的命名风格</h4><ul>
+<li>具有语义化（语义化：一看就知道是什么）</li>
+<li>驼峰命名<ul>
+<li>大驼峰<ul>
+<li>JavaScript</li>
+</ul>
+</li>
+<li>小驼峰<ul>
+<li>javaScript</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="多变量同时声明"><a href="#多变量同时声明" class="headerlink" title="多变量同时声明"></a>多变量同时声明</h4><p>使用逗号对变量名进行间隔，只需要一个关键字var。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">10</span>,</span><br><span class="line">    b = <span class="number">20</span>,</span><br><span class="line">    c = <span class="string">'Hello'</span>;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -620,7 +734,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#初步认识JavaScript"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x521D;&#x6B65;&#x8BA4;&#x8BC6;JavaScript" class="headerlink" title="&#x521D;&#x6B65;&#x8BA4;&#x8BC6;JavaScript"></a>&#x521D;&#x6B65;&#x8BA4;&#x8BC6;JavaScript</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript简介"><span class="nav-number">1.1.</span> <span class="nav-text"><a href="#JavaScript&#x7B80;&#x4ECB;" class="headerlink" title="JavaScript&#x7B80;&#x4ECB;"></a>JavaScript&#x7B80;&#x4ECB;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Web中哪些时候需要用到？"><span class="nav-number">1.1.1.</span> <span class="nav-text"><a href="#Web&#x4E2D;&#x54EA;&#x4E9B;&#x65F6;&#x5019;&#x9700;&#x8981;&#x7528;&#x5230;&#xFF1F;" class="headerlink" title="Web&#x4E2D;&#x54EA;&#x4E9B;&#x65F6;&#x5019;&#x9700;&#x8981;&#x7528;&#x5230;&#xFF1F;"></a>Web&#x4E2D;&#x54EA;&#x4E9B;&#x65F6;&#x5019;&#x9700;&#x8981;&#x7528;&#x5230;&#xFF1F;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript组成"><span class="nav-number">1.1.2.</span> <span class="nav-text"><a href="#JavaScript&#x7EC4;&#x6210;" class="headerlink" title="JavaScript&#x7EC4;&#x6210;"></a>JavaScript&#x7EC4;&#x6210;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript-基础语法"><span class="nav-number">2.</span> <span class="nav-text"><a href="#JavaScript-&#x57FA;&#x7840;&#x8BED;&#x6CD5;" class="headerlink" title="JavaScript &#x57FA;&#x7840;&#x8BED;&#x6CD5;"></a>JavaScript &#x57FA;&#x7840;&#x8BED;&#x6CD5;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript-应该放在什么位置？"><span class="nav-number">2.0.1.</span> <span class="nav-text"><a href="#JavaScript-&#x5E94;&#x8BE5;&#x653E;&#x5728;&#x4EC0;&#x4E48;&#x4F4D;&#x7F6E;&#xFF1F;" class="headerlink" title="JavaScript &#x5E94;&#x8BE5;&#x653E;&#x5728;&#x4EC0;&#x4E48;&#x4F4D;&#x7F6E;&#xFF1F;"></a>JavaScript &#x5E94;&#x8BE5;&#x653E;&#x5728;&#x4EC0;&#x4E48;&#x4F4D;&#x7F6E;&#xFF1F;</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#初步认识JavaScript"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x521D;&#x6B65;&#x8BA4;&#x8BC6;JavaScript" class="headerlink" title="&#x521D;&#x6B65;&#x8BA4;&#x8BC6;JavaScript"></a>&#x521D;&#x6B65;&#x8BA4;&#x8BC6;JavaScript</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript简介"><span class="nav-number">1.1.</span> <span class="nav-text"><a href="#JavaScript&#x7B80;&#x4ECB;" class="headerlink" title="JavaScript&#x7B80;&#x4ECB;"></a>JavaScript&#x7B80;&#x4ECB;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Web中哪些时候需要用到？"><span class="nav-number">1.1.1.</span> <span class="nav-text"><a href="#Web&#x4E2D;&#x54EA;&#x4E9B;&#x65F6;&#x5019;&#x9700;&#x8981;&#x7528;&#x5230;&#xFF1F;" class="headerlink" title="Web&#x4E2D;&#x54EA;&#x4E9B;&#x65F6;&#x5019;&#x9700;&#x8981;&#x7528;&#x5230;&#xFF1F;"></a>Web&#x4E2D;&#x54EA;&#x4E9B;&#x65F6;&#x5019;&#x9700;&#x8981;&#x7528;&#x5230;&#xFF1F;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript组成"><span class="nav-number">1.1.2.</span> <span class="nav-text"><a href="#JavaScript&#x7EC4;&#x6210;" class="headerlink" title="JavaScript&#x7EC4;&#x6210;"></a>JavaScript&#x7EC4;&#x6210;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript-基础语法"><span class="nav-number">2.</span> <span class="nav-text"><a href="#JavaScript-&#x57FA;&#x7840;&#x8BED;&#x6CD5;" class="headerlink" title="JavaScript &#x57FA;&#x7840;&#x8BED;&#x6CD5;"></a>JavaScript &#x57FA;&#x7840;&#x8BED;&#x6CD5;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript-应该放在什么位置？"><span class="nav-number">2.0.1.</span> <span class="nav-text"><a href="#JavaScript-&#x5E94;&#x8BE5;&#x653E;&#x5728;&#x4EC0;&#x4E48;&#x4F4D;&#x7F6E;&#xFF1F;" class="headerlink" title="JavaScript &#x5E94;&#x8BE5;&#x653E;&#x5728;&#x4EC0;&#x4E48;&#x4F4D;&#x7F6E;&#xFF1F;"></a>JavaScript &#x5E94;&#x8BE5;&#x653E;&#x5728;&#x4EC0;&#x4E48;&#x4F4D;&#x7F6E;&#xFF1F;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#语句"><span class="nav-number">2.0.2.</span> <span class="nav-text"><a href="#&#x8BED;&#x53E5;" class="headerlink" title="&#x8BED;&#x53E5;"></a>&#x8BED;&#x53E5;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注释"><span class="nav-number">2.0.3.</span> <span class="nav-text"><a href="#&#x6CE8;&#x91CA;" class="headerlink" title="&#x6CE8;&#x91CA;"></a>&#x6CE8;&#x91CA;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#script标签上的属性"><span class="nav-number">2.0.4.</span> <span class="nav-text"><a href="#script&#x6807;&#x7B7E;&#x4E0A;&#x7684;&#x5C5E;&#x6027;" class="headerlink" title="script&#x6807;&#x7B7E;&#x4E0A;&#x7684;&#x5C5E;&#x6027;"></a>script&#x6807;&#x7B7E;&#x4E0A;&#x7684;&#x5C5E;&#x6027;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取元素"><span class="nav-number">2.0.5.</span> <span class="nav-text"><a href="#&#x83B7;&#x53D6;&#x5143;&#x7D20;" class="headerlink" title="&#x83B7;&#x53D6;&#x5143;&#x7D20;"></a>&#x83B7;&#x53D6;&#x5143;&#x7D20;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调试"><span class="nav-number">2.0.6.</span> <span class="nav-text"><a href="#&#x8C03;&#x8BD5;" class="headerlink" title="&#x8C03;&#x8BD5;"></a>&#x8C03;&#x8BD5;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#script标签最合适的放置位置"><span class="nav-number">2.0.7.</span> <span class="nav-text"><a href="#script&#x6807;&#x7B7E;&#x6700;&#x5408;&#x9002;&#x7684;&#x653E;&#x7F6E;&#x4F4D;&#x7F6E;" class="headerlink" title="script&#x6807;&#x7B7E;&#x6700;&#x5408;&#x9002;&#x7684;&#x653E;&#x7F6E;&#x4F4D;&#x7F6E;"></a>script&#x6807;&#x7B7E;&#x6700;&#x5408;&#x9002;&#x7684;&#x653E;&#x7F6E;&#x4F4D;&#x7F6E;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给元素绑定事件"><span class="nav-number">2.0.8.</span> <span class="nav-text"><a href="#&#x7ED9;&#x5143;&#x7D20;&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;" class="headerlink" title="&#x7ED9;&#x5143;&#x7D20;&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;"></a>&#x7ED9;&#x5143;&#x7D20;&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#操作元素的样式"><span class="nav-number">2.0.9.</span> <span class="nav-text"><a href="#&#x64CD;&#x4F5C;&#x5143;&#x7D20;&#x7684;&#x6837;&#x5F0F;" class="headerlink" title="&#x64CD;&#x4F5C;&#x5143;&#x7D20;&#x7684;&#x6837;&#x5F0F;"></a>&#x64CD;&#x4F5C;&#x5143;&#x7D20;&#x7684;&#x6837;&#x5F0F;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量"><span class="nav-number">2.0.10.</span> <span class="nav-text"><a href="#&#x53D8;&#x91CF;" class="headerlink" title="&#x53D8;&#x91CF;"></a>&#x53D8;&#x91CF;</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#变量的好处"><span class="nav-number">2.0.10.1.</span> <span class="nav-text"><a href="#&#x53D8;&#x91CF;&#x7684;&#x597D;&#x5904;" class="headerlink" title="&#x53D8;&#x91CF;&#x7684;&#x597D;&#x5904;"></a>&#x53D8;&#x91CF;&#x7684;&#x597D;&#x5904;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#变量命名规则"><span class="nav-number">2.0.10.2.</span> <span class="nav-text"><a href="#&#x53D8;&#x91CF;&#x547D;&#x540D;&#x89C4;&#x5219;" class="headerlink" title="&#x53D8;&#x91CF;&#x547D;&#x540D;&#x89C4;&#x5219;"></a>&#x53D8;&#x91CF;&#x547D;&#x540D;&#x89C4;&#x5219;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关键字和保留字"><span class="nav-number">2.0.10.3.</span> <span class="nav-text"><a href="#&#x5173;&#x952E;&#x5B57;&#x548C;&#x4FDD;&#x7559;&#x5B57;" class="headerlink" title="&#x5173;&#x952E;&#x5B57;&#x548C;&#x4FDD;&#x7559;&#x5B57;"></a>&#x5173;&#x952E;&#x5B57;&#x548C;&#x4FDD;&#x7559;&#x5B57;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#变量的命名风格"><span class="nav-number">2.0.10.4.</span> <span class="nav-text"><a href="#&#x53D8;&#x91CF;&#x7684;&#x547D;&#x540D;&#x98CE;&#x683C;" class="headerlink" title="&#x53D8;&#x91CF;&#x7684;&#x547D;&#x540D;&#x98CE;&#x683C;"></a>&#x53D8;&#x91CF;&#x7684;&#x547D;&#x540D;&#x98CE;&#x683C;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多变量同时声明"><span class="nav-number">2.0.10.5.</span> <span class="nav-text"><a href="#&#x591A;&#x53D8;&#x91CF;&#x540C;&#x65F6;&#x58F0;&#x660E;" class="headerlink" title="&#x591A;&#x53D8;&#x91CF;&#x540C;&#x65F6;&#x58F0;&#x660E;"></a>&#x591A;&#x53D8;&#x91CF;&#x540C;&#x65F6;&#x58F0;&#x660E;</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
