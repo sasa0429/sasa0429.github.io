@@ -111,7 +111,7 @@
 <li>DOM：文档对象模型</li>
 <li>BOM：浏览器对象模型</li>
 </ul>
-<h1 id="JavaScript-基础语法"><a href="#JavaScript-基础语法" class="headerlink" title="JavaScript 基础语法"></a>JavaScript 基础语法</h1><h3 id="JavaScript-应该放在什么位置？"><a href="#JavaScript-应该放在什么位置？" class="headerlink" title="JavaScript 应该放在什么位置？"></a>JavaScript 应该放在什么位置？</h3><ul>
+<h1 id="JavaScript-基础语法"><a href="#JavaScript-基础语法" class="headerlink" title="JavaScript 基础语法"></a>JavaScript 基础语法</h1><h2 id="JavaScript-应该放在什么位置？"><a href="#JavaScript-应该放在什么位置？" class="headerlink" title="JavaScript 应该放在什么位置？"></a>JavaScript 应该放在什么位置？</h2><ul>
 <li><p>行间 JS</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">onclick</span>=<span class="string">"alert('我爱JavaScrip！')"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <ul>
@@ -158,7 +158,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h3><ul>
+<h2 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h2><ul>
 <li>语句（statement）是为了完成某种任务而进行的操作，比如下面就是一行赋值语句</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span> + <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
@@ -167,7 +167,7 @@
 <li>JavaScript中语句以<code>;</code>结束，一行可以包含多条语句，如果省略分号不会产生语法错误，解释器会自动判断语句结束</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="number">1</span> + <span class="number">2</span></span><br><span class="line"><span class="keyword">var</span> diff = <span class="number">3</span> - <span class="number">4</span>;</span><br></pre></td></tr></table></figure>
-<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><ul>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ul>
 <li>单行注释</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//这里是单行注释内容</span></span><br></pre></td></tr></table></figure>
@@ -175,11 +175,11 @@
 <li>多行注释</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	这里是多行注释内容</span></span><br><span class="line"><span class="comment">	第二行</span></span><br><span class="line"><span class="comment">	第三行</span></span><br><span class="line"><span class="comment">	···</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-<h3 id="script标签上的属性"><a href="#script标签上的属性" class="headerlink" title="script标签上的属性"></a>script标签上的属性</h3><p>两个我都见过，到底应该写哪个？</p>
+<h2 id="script标签上的属性"><a href="#script标签上的属性" class="headerlink" title="script标签上的属性"></a>script标签上的属性</h2><p>两个我都见过，到底应该写哪个？</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">"text/javascript"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line">&lt;script&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <p><strong>type属性</strong>表示编写代码使用的脚本语言的内容类型（学术语：MIME 类型）。</p>
 <p>从 Html5 开始，可以省略，如果是 script 标签，默认为 type = “text/javascript” , 同理 css 也是一样。<strong>但是如果希望向下兼容低版本浏览器，那么建议还是加上</strong>。</p>
-<h3 id="获取元素"><a href="#获取元素" class="headerlink" title="获取元素"></a>获取元素</h3><ul>
+<h2 id="获取元素"><a href="#获取元素" class="headerlink" title="获取元素"></a>获取元素</h2><ul>
 <li>document.getElementById(‘ ID ‘)<ul>
 <li>通过指定 ID 获取元素；</li>
 <li>返回第一个符合条件的元素；</li>
@@ -196,8 +196,8 @@
 </li>
 </ul>
 <p>注意！！JS是区分大小写的，所以千万大小写千万不要打错</p>
-<h3 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(要打印的内容)</span><br></pre></td></tr></table></figure>
-<h3 id="script标签最合适的放置位置"><a href="#script标签最合适的放置位置" class="headerlink" title="script标签最合适的放置位置"></a>script标签最合适的放置位置</h3><p>页面读到 标签的时候开始解析页面。当页面结构未生成的时候，在 标签中的 JS 代码如果获取元素，将获取失败。</p>
+<h2 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(要打印的内容)</span><br></pre></td></tr></table></figure>
+<h2 id="script标签最合适的放置位置"><a href="#script标签最合适的放置位置" class="headerlink" title="script标签最合适的放置位置"></a>script标签最合适的放置位置</h2><p>页面读到 标签的时候开始解析页面。当页面结构未生成的时候，在 标签中的 JS 代码如果获取元素，将获取失败。</p>
 <p><strong>两种解决方案</strong></p>
 <ol>
 <li>在 中的JS代码，放置在 window.onload（等待窗口加载完成） 事件中。</li>
@@ -206,19 +206,19 @@
 <p><strong>注意事项</strong></p>
 <p>如果 JS 的代码比较庞大，需要较长的时间读取，会影响页面的加载，造成页面长时间空白。</p>
 <p>从用户体验的角度来说，我们应该避免这样的情况，长时间空白会让用户觉得打开速度很慢，从而造成用户流失。</p>
-<h3 id="给元素绑定事件"><a href="#给元素绑定事件" class="headerlink" title="给元素绑定事件"></a>给元素绑定事件</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ele.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">//点击后要做的事情</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    元素.事件 = function()&#123;</span></span><br><span class="line"><span class="comment">        //点击后要做的事情</span></span><br><span class="line"><span class="comment">    &#125;;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<h2 id="给元素绑定事件"><a href="#给元素绑定事件" class="headerlink" title="给元素绑定事件"></a>给元素绑定事件</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ele.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">//点击后要做的事情</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    元素.事件 = function()&#123;</span></span><br><span class="line"><span class="comment">        //点击后要做的事情</span></span><br><span class="line"><span class="comment">    &#125;;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>ele —— 需要绑定事件的元素</li>
 <li>onclick —— 点击事件</li>
 </ul>
-<h3 id="操作元素的样式"><a href="#操作元素的样式" class="headerlink" title="操作元素的样式"></a>操作元素的样式</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ele.style.background = <span class="string">'red'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	元素.样式.样式名 = '值';</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<h2 id="操作元素的样式"><a href="#操作元素的样式" class="headerlink" title="操作元素的样式"></a>操作元素的样式</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ele.style.background = <span class="string">'red'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	元素.样式.样式名 = '值';</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>ele —— 需要改变样式的元素</li>
 <li>style —— 样式</li>
 <li>background —— 具体的样式名背景</li>
 <li>red —— 样式名对应的值，需要加上 ‘ ‘ (引号) </li>
 </ul>
-<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>变量用于存储数据。</p>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p>变量用于存储数据。</p>
 <p>在使用变量之前，需要先创建变量。</p>
 <p><strong>声明变量步骤</strong></p>
 <ul>
