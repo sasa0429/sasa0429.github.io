@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2019/04/12/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    
+    <lastmod>2019-04-27T10:55:01.545Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/04/01/JavaScript%E5%9F%BA%E7%A1%80/</loc>
+    
+    <lastmod>2019-04-27T10:54:46.063Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/04/20/vuejs/</loc>
     
     <lastmod>2019-04-26T15:04:35.218Z</lastmod>
@@ -9,30 +23,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2019/04/17/JavaScript%E5%9F%BA%E7%A1%80/</loc>
-    
-    <lastmod>2019-04-21T04:27:14.014Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/tags/index.html</loc>
     
     <lastmod>2019-04-18T15:15:21.227Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/04/16/new-story/</loc>
-    
-    <lastmod>2019-04-16T15:43:30.295Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/04/15/today/</loc>
-    
-    <lastmod>2019-04-15T15:15:19.534Z</lastmod>
     
   </url>
   
