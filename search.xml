@@ -844,7 +844,8 @@
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var a = 1;</span><br><span class="line">a = a + 1;</span><br><span class="line">a += 1;</span><br><span class="line">a++;</span><br></pre></td></tr></table></figure>
 <p>以上的三句话表达的都是一样的意思，但明显可以看到最后这句最简单</p>
-<h4 id="案例：简易轮播图"><a href="#案例：简易轮播图" class="headerlink" title="[案例：简易轮播图]"></a>[案例：简易轮播图]</h4><hr>
+<h4 id="案例：简易轮播图"><a href="#案例：简易轮播图" class="headerlink" title="[案例：简易轮播图]"></a>[案例：简易轮播图]</h4><p>a标签本身不是用来加js的，本职工作是跳转页面。如果需要让a标签加js事件，那就给href属性加上javascript:;     不跳转页面，只执行js</p>
+<hr>
 <h3 id="初始数组"><a href="#初始数组" class="headerlink" title="初始数组"></a>初始数组</h3><h4 id="定义数组"><a href="#定义数组" class="headerlink" title="定义数组"></a>定义数组</h4><ul>
 <li>[] - 可以存储多个值</li>
 <li>每个值之间利用逗号进行间隔，最后一个值后面没有逗号</li>
@@ -855,6 +856,7 @@
 <h3 id="数组的取值"><a href="#数组的取值" class="headerlink" title="数组的取值"></a>数组的取值</h3><p>根据下标进行取值，下标为数字，因为不符合标识符命名要求，所以我们必须使用 “[]” 的方式，对其进行操作，不可以使用“.”</p>
 <p>下标从0开始！！！！</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>];</span><br><span class="line">arr[<span class="number">0</span>] <span class="comment">// 'a'</span></span><br><span class="line">arr[<span class="number">1</span>] <span class="comment">// 'b'</span></span><br><span class="line">arr[<span class="number">2</span>] <span class="comment">// 'c'</span></span><br></pre></td></tr></table></figure>
+<h3 id="for-循环"><a href="#for-循环" class="headerlink" title="for 循环"></a>for 循环</h3><p>[案例：九九乘法表]</p>
 ]]></content>
       
         
