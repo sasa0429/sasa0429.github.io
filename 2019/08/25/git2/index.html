@@ -93,7 +93,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/08/25/Fvjdm95nbr8Ozt2.png">
 <meta property="og:image" content="https://i.loli.net/2019/08/25/qrdILGepBsK8mPC.png">
 <meta property="og:image" content="https://s2.ax1x.com/2019/08/25/m2IBan.png">
-<meta property="og:updated_time" content="2019-08-25T13:31:15.726Z">
+<meta property="og:updated_time" content="2019-08-25T13:38:19.333Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git 学习笔记二">
 <meta name="twitter:description" content="本文是第二次学习 Git 做的一些详细的笔记，相信每次学习都有更深入的收获。 版本控制版本控制是指对软件开发过程中各种程序代码、说明文档等文件的变更进行管理。">
@@ -512,10 +512,8 @@
 <p>合并冲突的时候，比较差异可以用difftool工具</p>
 <h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><p>有的时候，我们希望给某一个特定的历史提交打上一些标签</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag -a v1.0.0 HEAD/commitId</span><br></pre></td></tr></table></figure>
-<h1 id="协同开发"><a href="#协同开发" class="headerlink" title="协同开发"></a>协同开发</h1><p>以上所有的操作都是建立在本地的，如果我们希望进行团队协同开发，那么这个时候，我们就需要把 git 仓库信息与团队中的所有人进行共享</p>
-<ul>
-<li>分布式 - 中心化与去中心化</li>
-</ul>
+<h1 id="协同开发"><a href="#协同开发" class="headerlink" title="协同开发"></a>协同开发</h1><p>以上所有的操作都是建立在本地的，如果我们希望进行团队协同开发，那么这个时候，我们就需要把 git 仓库信息与团队中的所有人进行共享。</p>
+<p>分布式 - 中心化与去中心化</p>
 <h2 id="github"><a href="#github" class="headerlink" title="github"></a>github</h2><p>首先注册一个账号</p>
 <p>使用 ssh 链接</p>
 <h3 id="生成-SSH-密钥"><a href="#生成-SSH-密钥" class="headerlink" title="生成 SSH 密钥"></a>生成 SSH 密钥</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"youremail@qq.com"</span></span><br></pre></td></tr></table></figure>
