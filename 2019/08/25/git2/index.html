@@ -91,10 +91,9 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.loli.net/2019/08/25/coEbYz2Z6l4qVwU.png">
 <meta property="og:image" content="https://i.loli.net/2019/08/25/Fvjdm95nbr8Ozt2.png">
-<meta property="og:image" content="c:/Users/XY/Downloads/assets/path.png">
 <meta property="og:image" content="https://i.loli.net/2019/08/25/qrdILGepBsK8mPC.png">
 <meta property="og:image" content="https://s2.ax1x.com/2019/08/25/m2IBan.png">
-<meta property="og:updated_time" content="2019-08-25T13:27:03.306Z">
+<meta property="og:updated_time" content="2019-08-25T13:31:15.726Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git 学习笔记二">
 <meta name="twitter:description" content="本文是第二次学习 Git 做的一些详细的笔记，相信每次学习都有更深入的收获。 版本控制版本控制是指对软件开发过程中各种程序代码、说明文档等文件的变更进行管理。">
@@ -499,7 +498,6 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 合并 HEAD 前两个祖先记录</span></span><br><span class="line">git rebase -i HEAD~2</span><br></pre></td></tr></table></figure>
 <h4 id="与"><a href="#与" class="headerlink" title="~ 与 ^"></a>~ 与 ^</h4><p>~ : 纵向</p>
 <p>^ : 横向</p>
-<p><img src="C:/Users/XY/Downloads/assets/path.png" alt="1566209448773"></p>
 <h4 id="rebase-操作"><a href="#rebase-操作" class="headerlink" title="rebase 操作"></a>rebase 操作</h4><p><img src="https://i.loli.net/2019/08/25/qrdILGepBsK8mPC.png" alt="path"></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># p, pick = use commit =&gt; 使用</span></span><br><span class="line"><span class="comment"># r, reword = use commit, but edit the commit message =&gt; 使用，但重新编辑说明</span></span><br><span class="line"><span class="comment"># e, edit = use commit, but stop for amending =&gt; 使用</span></span><br><span class="line"><span class="comment"># s, squash = use commit, but meld into previous commit =&gt; 使用，但合并上一次</span></span><br><span class="line"><span class="comment"># f, fixup = like "squash", but discard this commit's log message =&gt; 就像 squash 那样，但会抛弃这个 Commit 的 Commit message</span></span><br><span class="line"><span class="comment"># x, exec = run command (the rest of the line) using shell =&gt; 执行脚本</span></span><br><span class="line"><span class="comment"># d, drop = remove commit =&gt; 移除</span></span><br></pre></td></tr></table></figure>
 <blockquote>
