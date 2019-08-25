@@ -312,6 +312,131 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/25/git2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="he sha">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/girl.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="码田半亩">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/25/git2/" itemprop="url">Git 学习笔记二</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-25T16:26:32+08:00">
+                2019-08-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>本文是第二次学习 Git 做的一些详细的笔记，相信每次学习都有更深入的收获。</p>
+<h1 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h1><p>版本控制是指对软件开发过程中各种程序代码、说明文档等文件的变更进行管理。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/08/25/git2/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/19/nodejs01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -331,7 +456,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/08/19/nodejs01/" itemprop="url">node.js（一）</a></h1>
+                <a class="post-title-link" href="/2019/08/19/nodejs01/" itemprop="url">Node.js一</a></h1>
         
 
         <div class="post-meta">
@@ -382,224 +507,14 @@
 
       
         
-          
-            <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>Node.js 诞生于2009年，Node.js采用C++语言编写而成，是 一个Javascript的运行环境。Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境 ，让JavaScript的运行脱离浏览器端，可以使用JavaScript语言 书写服务器端代码。</p>
-<h1 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h1><p>​    <a href="https://nodejs.org" target="_blank" rel="noopener">Node.js官网</a>下载稳定版本,node偶数版本为稳定版本，奇数版本为非稳定版本。</p>
-<ul>
-<li><p>安装完Node.js会自动安装NPM(Node Package Manager)：包管理工具；</p>
-</li>
-<li><p>通过指令 <code>node -v</code> 来查看是否安装完成和查看node版本号；<code>npm -v</code> 来查看npm版本。</p>
-</li>
-<li><p>window系统可以安装gitbush来使用和 linux风格指令；<a href="https://git-scm.com/" target="_blank" rel="noopener">官网地址</a></p>
-</li>
-</ul>
-<ul>
-<li><p>终端快捷键：<code>ctrl+·</code></p>
-</li>
-<li><p>运行nodejs：<code>node http.js</code></p>
-</li>
-</ul>
-<p>查看nodejs的内置模块：<a href="https://nodejs.org/dist/latest-v10.x/docs/api/" target="_blank" rel="noopener">https://nodejs.org/dist/latest-v10.x/docs/api/</a></p>
-<h2 id="使用Node-js实现第一个服务器"><a href="#使用Node-js实现第一个服务器" class="headerlink" title="使用Node.js实现第一个服务器"></a>使用Node.js实现第一个服务器</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//引入http模块</span></span><br><span class="line"><span class="keyword">const</span> http=<span class="built_in">require</span>(<span class="string">"http"</span>);</span><br><span class="line"><span class="comment">//创建一个服务器</span></span><br><span class="line"><span class="keyword">const</span> server=http.createServer(<span class="function">(<span class="params">req,res</span>)=&gt;</span>&#123;</span><br><span class="line">    res.setHeader(<span class="string">"content-type"</span>,<span class="string">"text/html;charset=utf-8;"</span>);</span><br><span class="line">    res.write(<span class="string">"hello world"</span>);</span><br><span class="line">    res.end();</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//设置端口号</span></span><br><span class="line">server.listen(<span class="number">3000</span>);</span><br></pre></td></tr></table></figure>
-<ul>
-<li><code>res.setHeader(&quot;content-type&quot;,&quot;text/html;charset=utf-8;&quot;);</code>//响应头，设置中文不乱码</li>
-<li><code>require(&quot;http&quot;);</code><ul>
-<li>nodejs模块，是按commonjs规范</li>
-<li>http 是node的内置模块（预定义模块），可以在VScode里用ctrl+鼠标点击，查看该模块源码</li>
-<li>自定义模块</li>
-</ul>
-</li>
-<li>端口号，尽量用四位数字以上，1024+</li>
-</ul>
-<h2 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h2><ul>
-<li>本地访问（既是客户端，也是服务端）：<ul>
-<li>localhost:端口号</li>
-<li>127.0.0.1:端口号</li>
-<li>本机IP:端口号<ul>
-<li>本机IP查询：打开cmd–&gt;输入ipconfig–&gt;IPv4 地址</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>非本地访问：<ul>
-<li>本机IP:端口号</li>
-<li>域名:端口号</li>
-</ul>
-</li>
-<li>node每次改完代码，需要重启。</li>
-</ul>
-<h2 id="nodemon"><a href="#nodemon" class="headerlink" title="nodemon"></a>nodemon</h2><ul>
-<li>nodemon自动重启，实时更新</li>
-<li><code>npm install nodemon -g</code></li>
-<li>启动<code>nodemon http.js</code></li>
-</ul>
-<h1 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h1><h2 id="为什么会有模块化"><a href="#为什么会有模块化" class="headerlink" title="为什么会有模块化"></a>为什么会有模块化</h2><p>在JavaScript发展初期就是为了实现简单的页面交互逻辑，寥寥数语即，如今随着前端代码日益膨胀</p>
-<p>这时候JavaScript作为嵌入式的脚本语言的定位动摇了，JavaScript却没有为组织代码提供任何明显帮助，JavaScript极其简单的代码组织规范不足以驾驭如此庞大规模的代码；</p>
-<h2 id="Node-js中的模块化-commonjs规范"><a href="#Node-js中的模块化-commonjs规范" class="headerlink" title="Node.js中的模块化  commonjs规范"></a>Node.js中的模块化  commonjs规范</h2><p>CommonJS就是为JS的表现来制定规范，因为js没有模块的功能所以CommonJS应运而生，它希望js可以在任何地方运行，不只是浏览器中。</p>
-<h2 id="自定义模块"><a href="#自定义模块" class="headerlink" title="自定义模块"></a>自定义模块</h2><h3 id="引入自定义模块"><a href="#引入自定义模块" class="headerlink" title="引入自定义模块"></a>引入自定义模块</h3><ul>
-<li><p>新建文件夹–创建a.js作为模块文件，创建index.js作为主入口文件</p>
-<ul>
-<li>a.js</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(&quot;a.js文件...&quot;);</span><br></pre></td></tr></table></figure>
-<ul>
-<li>index.js</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//通过require来引入</span></span><br><span class="line"><span class="built_in">require</span>(<span class="string">"./a.js"</span>);</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>模块有分：文件模块、目录模块、规范的node_modules模块</p>
-<p>以文件定义的模块，前面必须加<code>./</code>，否则会报错</p>
-<p><code>.js</code>文件后缀，可加可不加</p>
-</blockquote>
-</li>
-<li><p><code>cd</code>到当前文件夹下，<code>nodemon index.js</code>，成功引入和执行</p>
-</li>
-</ul>
-<h3 id="模块的作用域是独立的"><a href="#模块的作用域是独立的" class="headerlink" title="模块的作用域是独立的"></a>模块的作用域是独立的</h3><p>自定义模块的按需导出</p>
-<h3 id="导入导出"><a href="#导入导出" class="headerlink" title="导入导出"></a>导入导出</h3><h4 id="文件形式导入导出"><a href="#文件形式导入导出" class="headerlink" title="文件形式导入导出"></a>文件形式导入导出</h4><ul>
-<li>导出</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">module.exports=&#123;a&#125;;</span><br></pre></td></tr></table></figure>
-<p>或者</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">exports.a=a;</span><br></pre></td></tr></table></figure>
-<p>exports是module.exports的引用。</p>
-<p>如果写成exports={a}，会报错</p>
-<ul>
-<li>引入</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> a = <span class="built_in">require</span>(<span class="string">"./a"</span>);</span><br></pre></td></tr></table></figure>
-<h4 id="目录-文件夹-导入导出"><a href="#目录-文件夹-导入导出" class="headerlink" title="目录(文件夹)导入导出"></a>目录(文件夹)导入导出</h4><ul>
-<li>新建目录b，在b目录下新建<code>index.js</code>文件，会自动查找文件夹下的index.js文件执行</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="number">123</span>)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>在主目录下的<code>index.js</code>中引入b模块，</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">required(<span class="string">"./b"</span>); <span class="comment">//必须加"./"</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>保存，就会在终端输出结果123。</li>
-</ul>
-<p>如果想要引入b目录下的c.js文件，可以在b目录下的index.js里require(“./c”);</p>
-<blockquote>
-<ul>
-<li>当然也可以配置默认启动文件</li>
-</ul>
-<p>由于默认导入的文件是目录下的<code>index.js</code>文件，但可以通过目录创建<code>package.json</code>文件修改这个默认的入口。</p>
-<p>例如在b目录下创建<code>package.json</code>来指定执行文件，</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; &#123;</span><br><span class="line">&gt;  &quot;name&quot;:&quot;b&quot;,</span><br><span class="line">&gt;  &quot;version&quot;:&quot;1.0.0&quot;,</span><br><span class="line">&gt;  &quot;main&quot;:&quot;d.js&quot;</span><br><span class="line">&gt; &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<p>&gt;</p>
-<blockquote>
-<p>在b目录下创建d.js文件，<code>console.log(&quot;我是d.js...&quot;)；</code>，保存，终端输出结果，此时是通过b目录下的d.js作为导入入口，而不是之前默认的b目录下的index.js了。</p>
-<p>在查找的过程中，如果同时存在<code>a.js</code>文件和<code>a</code>文件夹，会优先查找a.js文件，再去找文件夹的。</p>
-</blockquote>
-<h4 id="自定义模块的按需导出"><a href="#自定义模块的按需导出" class="headerlink" title="自定义模块的按需导出"></a>自定义模块的按需导出</h4><p>通过module.exports 导出； __<em>dirname  , \</em>_filename</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    a:<span class="string">"我是a的值"</span>,</span><br><span class="line">    b()&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"我是导出的b函数"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>引入导出文件</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> mymodule = <span class="built_in">require</span>(<span class="string">"bModule"</span>);</span><br><span class="line"><span class="built_in">console</span>.log(mymodule.a);</span><br><span class="line">mymodule.b();</span><br></pre></td></tr></table></figure>
-<p>或者 通过  exports来导出</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">exports.fn = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"我是fn函数"</span>);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>导入文件</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> myfn = <span class="built_in">require</span>(<span class="string">"bModule"</span>).fn;</span><br><span class="line">myfn();</span><br><span class="line"><span class="comment">// 或者 通过解构赋值 </span></span><br><span class="line"><span class="keyword">let</span> &#123; fn &#125; = <span class="built_in">require</span>(<span class="string">"bModule"</span>);</span><br><span class="line">fn();</span><br></pre></td></tr></table></figure>
-<ul>
-<li>模块加载的优先级 ,先文件再目录；</li>
-</ul>
-<h4 id="node-modules-模块"><a href="#node-modules-模块" class="headerlink" title="node_modules 模块"></a>node_modules 模块</h4><p>直接引入模块名，前面无需加<code>&quot;./&quot;</code></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">require</span>(<span class="string">"mymodules"</span>);</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>查找优先级：文件 &gt; 文件夹 &gt; node_modules</p>
-</blockquote>
-<h4 id="内置模块"><a href="#内置模块" class="headerlink" title="内置模块"></a>内置模块</h4><p>nodejs内置模块有：Buffer，C/C++Addons，Child Processes，Cluster，Console，Cr</p>
-<p>ypto，Debugger，DNS，Domain，Errors，Events，File System，</p>
-<p>Globals，HTTP，HTTPS，Modules，Net，OS，Path，Process，P unycode，Query Strings，Readline，REPL，Stream，String De coder，Timers，TLS/SSL，TTY，UDP/Datagram，URL， Utilities，V8，VM，ZLIB；内置模块不需要安装，外置模块需要安装；</p>
-<h2 id="fs模块"><a href="#fs模块" class="headerlink" title="fs模块"></a>fs模块</h2><blockquote>
-<p>fs是文件操作模块，所有文件操作都是有同步和异步之分，特点是同步会加上 “Sync” 如：异步读取文件  “readFile”，同步读取文件 “readFileSync”；</p>
-</blockquote>
-<p>fs可以对所有类型格式的文件及目录进行操作</p>
-<p>可以用来加载页面</p>
-<p>文件操作：增删改查</p>
-<p>大方向：文件和目录</p>
-<p>所有文件操作，都分为同步(sync)和异步</p>
-<ul>
-<li>异步写入</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> fs = <span class="built_in">require</span>(<span class="string">"fs"</span>);</span><br><span class="line"><span class="comment">//flag配置  "a":追加写入，"w":写入，"r":读取</span></span><br><span class="line">fs.writeFile(<span class="string">"2.txt"</span>,<span class="string">"我是要写入的内容"</span>,&#123;<span class="attr">flag</span>:<span class="string">"w"</span>&#125;,err=&gt;&#123;</span><br><span class="line">    <span class="keyword">if</span>(err)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">console</span>.log(err);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"写入成功"</span>);   </span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>同步写入</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fs.writeFileSync(<span class="string">"2.txt"</span>,<span class="string">"我是2.txt的内容"</span>);</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>同步后面有sync后缀，</p>
-<p>异步要拿到结果，需要回调；同步要拿到结果，需要有返回值，例如let res=fs.xxxx</p>
-<p>同步(sync)(结果返还值)；异步(回调)</p>
-<p>node没有严格分用同步或异步，某些用异步性能更好，如果某些逻辑用异步区分不了，用同步也是可以的。建议异步更好。</p>
-</blockquote>
-<ul>
-<li><p>读取文件</p>
-<ul>
-<li>异步读取</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> fs = <span class="built_in">require</span>(<span class="string">"fs"</span>);</span><br><span class="line">fs.readFile(<span class="string">"1.txt"</span>,(err,data)=&gt;&#123;</span><br><span class="line">    <span class="keyword">if</span>(err)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">console</span>.log(err);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(data);</span><br><span class="line">    <span class="built_in">console</span>.log(data.toString())</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<p>打印出来的data是buffer形式，可以通过<code>.toString()</code>来转换成字符串。</p>
-<blockquote>
-<p>buffer是对象，是nodejs传输或接收数据的格式</p>
-</blockquote>
-<ul>
-<li>同步读取</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> fs = <span class="built_in">require</span>(<span class="string">"fs"</span>);</span><br><span class="line"><span class="keyword">let</span> res = fs.readFileSync(<span class="string">"1.txt"</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res.toString());</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除文件</p>
-</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fs.unlinkSync(<span class="string">"1.txt"</span>);</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">fs.unlink(&quot;2.txt&quot;,err=&gt;&#123;</span><br><span class="line">    if(err)&#123;</span><br><span class="line">        return console.log(err);</span><br><span class="line">    &#125;</span><br><span class="line">    console.log(&quot;删除成功&quot;);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>复制文件（先读取，再写入）</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">mycopy</span>(<span class="params">src,dest</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> data=fs.readFileSync(src);</span><br><span class="line">    fs.writeFileSync(dest,data);</span><br><span class="line">&#125;</span><br><span class="line">mycopy(<span class="string">"2.txt"</span>,<span class="string">"3.txt"</span>);</span><br></pre></td></tr></table></figure>
-<ul>
-<li>修改文件名，目录也可以通过rename来操作</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">fs.rename(<span class="string">"2.txt"</span>,<span class="string">"4.txt"</span>,err=&gt;&#123;</span><br><span class="line">    <span class="keyword">if</span>(err)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">console</span>.log(err);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"修改成功"</span>);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fs.rename(oldPath, newPath, [callback(err)])</span><br></pre></td></tr></table></figure>
-<ul>
-<li>查看文件或文件夹的详细信息state </li>
-<li>判断文件是否存在</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fs.exists(<span class="string">"4.txt"</span>,<span class="function"><span class="keyword">function</span> (<span class="params">exists</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(exists);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h2 id="一个引入页面的例子"><a href="#一个引入页面的例子" class="headerlink" title="一个引入页面的例子"></a>一个引入页面的例子</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">"http"</span>);</span><br><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">"fs"</span>);</span><br><span class="line"><span class="keyword">const</span> server = http.createServer(<span class="function">(<span class="params">req,res</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(req.url);</span><br><span class="line">    <span class="keyword">if</span>(req.url===<span class="string">"/"</span>||req.url===<span class="string">"/index"</span>)&#123;</span><br><span class="line">        <span class="keyword">let</span> result = fs.readFileSync(<span class="string">"./views/index.html"</span>);</span><br><span class="line">        res.setHeader(<span class="string">"content-type"</span>,<span class="string">"text/html;charset-utf-8"</span>);</span><br><span class="line">        res.write(result);</span><br><span class="line">        res.end();</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(req.url!==<span class="string">"/favicon.ico"</span>)&#123;</span><br><span class="line">            <span class="keyword">let</span> data = fs.readFileSync(<span class="string">"./views"</span>+req.url);</span><br><span class="line">            res.write(data);</span><br><span class="line">            res.end();</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">server.listen(<span class="number">3000</span>);</span><br></pre></td></tr></table></figure>
-<h2 id="url"><a href="#url" class="headerlink" title="url"></a>url</h2><p>解析url路径，通过url拿到真正的地址</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> url = <span class="built_in">require</span>(<span class="string">"url"</span>);</span><br></pre></td></tr></table></figure>
-<p>如果地址有带参数的话，可以通过下面的处理，带参数的地址将被看成是同一个地址。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> url = <span class="built_in">require</span>(<span class="string">"url"</span>);</span><br></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> pathObj = url.parse(req.url,<span class="literal">true</span>);</span><br><span class="line"><span class="keyword">let</span> pathname = pathObj.pathname;</span><br></pre></td></tr></table></figure>
-<p>完整例子：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">"http"</span>);</span><br><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">"fs"</span>);</span><br><span class="line"><span class="keyword">const</span> url = <span class="built_in">require</span>(<span class="string">"url"</span>);</span><br><span class="line"><span class="keyword">const</span> server = http.createServer(<span class="function">(<span class="params">req,res</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(req.url);</span><br><span class="line">    <span class="keyword">let</span> pathObj = url.parse(req.url,<span class="literal">true</span>);</span><br><span class="line">    <span class="keyword">let</span> pathname = pathObj.pathname;</span><br><span class="line">    <span class="built_in">console</span>.log(pathObj);</span><br><span class="line">    <span class="comment">// "/" 和 "/?p=1"是不是一个地址？</span></span><br><span class="line">    <span class="keyword">if</span>(pathname===<span class="string">"/"</span>||pathname===<span class="string">"/index"</span>)&#123;</span><br><span class="line">        <span class="keyword">let</span> result = fs.readFileSync(<span class="string">"./views/index.html"</span>);</span><br><span class="line">        res.setHeader(<span class="string">"content-type"</span>,<span class="string">"text/html;charset-utf-8"</span>);</span><br><span class="line">        res.write(result);</span><br><span class="line">        res.end();</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(pathname!==<span class="string">"/favicon.ico"</span>)&#123;</span><br><span class="line">            <span class="keyword">let</span> data = fs.readFileSync(<span class="string">"./views"</span>+pathname);</span><br><span class="line">            res.write(data);</span><br><span class="line">            res.end();</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">server.listen(<span class="number">3000</span>);</span><br></pre></td></tr></table></figure>
-<h2 id="setHeader"><a href="#setHeader" class="headerlink" title="setHeader"></a>setHeader</h2><p>针对不同的文件类型，需要设置不同的setHeader</p>
-<p>可以通过<code>path</code>模块里的<code>extname</code>方法获取文件的扩展名，也就是文件的后缀名。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> mime = <span class="built_in">require</span>(<span class="string">"./data/mime.json"</span>);</span><br><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">"path"</span>); </span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> extName = path.extname(pathname);<span class="comment">//获取文件扩展名</span></span><br><span class="line">            <span class="built_in">console</span>.log(extName);</span><br><span class="line">            res.setHeader(<span class="string">"content-type"</span>,mime[extName]);</span><br></pre></td></tr></table></figure>
-<h2 id="渲染活数据"><a href="#渲染活数据" class="headerlink" title="渲染活数据"></a>渲染活数据</h2><ul>
-<li>读取index.html的内容，得到的是buffer数据，并转化为字符串</li>
-<li>通过数据组装html</li>
-<li>//查找模板中的ul替换成自己组装的ul </li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//后端代码</span></span><br><span class="line"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">"http"</span>);</span><br><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">"fs"</span>);</span><br><span class="line"><span class="keyword">const</span> url = <span class="built_in">require</span>(<span class="string">"url"</span>);</span><br><span class="line"><span class="keyword">const</span> mime = <span class="built_in">require</span>(<span class="string">"./data/mime.json"</span>);</span><br><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">"path"</span>); </span><br><span class="line"><span class="keyword">let</span> newsData = <span class="built_in">require</span>(<span class="string">"./data/data.json"</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> server = http.createServer(<span class="function">(<span class="params">req,res</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> pathObj = url.parse(req.url,<span class="literal">true</span>);</span><br><span class="line">    <span class="keyword">let</span> pathname = pathObj.pathname;</span><br><span class="line">   </span><br><span class="line">    <span class="keyword">if</span>(pathname===<span class="string">"/"</span>||pathname===<span class="string">"/index"</span>)&#123;</span><br><span class="line">        newsData=newsData.slice(<span class="number">0</span>,<span class="number">5</span>);<span class="comment">//分页，显示5条数据</span></span><br><span class="line">        <span class="built_in">console</span>.log(newsData)</span><br><span class="line">        <span class="keyword">let</span> result = fs.readFileSync(<span class="string">"./views/index.html"</span>).toString();</span><br><span class="line">        res.setHeader(<span class="string">"content-type"</span>,<span class="string">"text/html;charset-utf-8"</span>);</span><br><span class="line">        <span class="comment">//通过数据组装html</span></span><br><span class="line">        <span class="keyword">let</span> htmlStr =<span class="string">`&lt;ul class="news-list"&gt;`</span></span><br><span class="line">        newsData.forEach(<span class="function"><span class="params">v</span> =&gt;</span> &#123;</span><br><span class="line">            htmlStr += <span class="string">`&lt;li class="news"&gt;</span></span><br><span class="line"><span class="string">                &lt;a href="javascript:;"&gt;</span></span><br><span class="line"><span class="string">                    &lt;img src="<span class="subst">$&#123;v.imgUrl&#125;</span>" alt=""&gt;</span></span><br><span class="line"><span class="string">                &lt;/a&gt;</span></span><br><span class="line"><span class="string">                &lt;div&gt;</span></span><br><span class="line"><span class="string">                    &lt;h3&gt;</span></span><br><span class="line"><span class="string">                        &lt;a href="javascript:;"&gt;<span class="subst">$&#123;v.title&#125;</span>&lt;/a&gt; </span></span><br><span class="line"><span class="string">                    &lt;/h3&gt;</span></span><br><span class="line"><span class="string">                    &lt;div class="info"&gt;</span></span><br><span class="line"><span class="string">                        &lt;span class="tips"&gt;&lt;span&gt;<span class="subst">$&#123;v.type&#125;</span>&lt;/span&gt;&lt;span&gt;<span class="subst">$&#123;v.country&#125;</span>&lt;/span&gt;&lt;/span&gt;</span></span><br><span class="line"><span class="string">                        &lt;!-- &lt;span class="line"&gt;&lt;/span&gt; --&gt;</span></span><br><span class="line"><span class="string">                        &lt;span class="time"&gt;| &amp;nbsp;&amp;nbsp;<span class="subst">$&#123;v.addTime&#125;</span>&lt;/span&gt;</span></span><br><span class="line"><span class="string">                    &lt;/div&gt;</span></span><br><span class="line"><span class="string">                &lt;/div&gt;</span></span><br><span class="line"><span class="string">            &lt;/li&gt;`</span>;</span><br><span class="line"></span><br><span class="line">        &#125;);</span><br><span class="line">        htmlStr +=<span class="string">`&lt;/ul&gt;`</span>;</span><br><span class="line">        <span class="comment">//查找模板中的ul替换成自己组装的ul</span></span><br><span class="line">        <span class="keyword">let</span> reg = <span class="regexp">/&lt;ul\s+class=(\'|\")news-list(\'|\")\s*&gt;([\d\D]*)&lt;\/ul&gt;/</span>;</span><br><span class="line">        <span class="keyword">let</span> newResult = result.replace(reg,htmlStr);</span><br><span class="line"></span><br><span class="line">        res.write(newResult);</span><br><span class="line">        res.end();</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(pathname!==<span class="string">"/favicon.ico"</span>)&#123;</span><br><span class="line">            <span class="keyword">let</span> extName = path.extname(pathname);<span class="comment">//获取文件扩展名</span></span><br><span class="line">            <span class="built_in">console</span>.log(extName);</span><br><span class="line">            res.setHeader(<span class="string">"content-type"</span>,mime[extName]);</span><br><span class="line">            <span class="keyword">let</span> data = fs.readFileSync(<span class="string">"./views"</span>+pathname);</span><br><span class="line">            res.write(data);</span><br><span class="line">            res.end();</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">server.listen(<span class="number">3000</span>);</span><br></pre></td></tr></table></figure>
-<h2 id="跳转到详情"><a href="#跳转到详情" class="headerlink" title="跳转到详情"></a>跳转到详情</h2><ul>
-<li>get把参数放到了query.id里去，通过id去查找对应的数据，</li>
-<li>再通过数据去组装对应的html，</li>
-<li>然后通过正则去匹配要找到的html，</li>
-<li>然后替换html</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//后端代码</span></span><br><span class="line"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">"http"</span>);</span><br><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">"fs"</span>);</span><br><span class="line"><span class="keyword">const</span> url = <span class="built_in">require</span>(<span class="string">"url"</span>);</span><br><span class="line"><span class="keyword">const</span> mime = <span class="built_in">require</span>(<span class="string">"./data/mime.json"</span>);</span><br><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">"path"</span>); </span><br><span class="line"><span class="keyword">let</span> newsData = <span class="built_in">require</span>(<span class="string">"./data/data.json"</span>);</span><br><span class="line"><span class="comment">// console.log(newsData)</span></span><br><span class="line"><span class="keyword">const</span> server = http.createServer(<span class="function">(<span class="params">req,res</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="comment">// console.log(req.url);</span></span><br><span class="line">    <span class="keyword">let</span> pathObj = url.parse(req.url,<span class="literal">true</span>);</span><br><span class="line">    <span class="keyword">let</span> pathname = pathObj.pathname;</span><br><span class="line">    <span class="comment">// console.log(pathObj);</span></span><br><span class="line">    <span class="comment">// "/" 和 "/?p=1"是不是一个地址？</span></span><br><span class="line">    <span class="keyword">if</span>(pathname===<span class="string">"/"</span>||pathname===<span class="string">"/index"</span>)&#123;</span><br><span class="line">        newsData=newsData.slice(<span class="number">0</span>,<span class="number">5</span>);</span><br><span class="line">        <span class="comment">// console.log(newsData)</span></span><br><span class="line">        <span class="keyword">let</span> result = fs.readFileSync(<span class="string">"./views/index.html"</span>).toString();</span><br><span class="line">        res.setHeader(<span class="string">"content-type"</span>,<span class="string">"text/html;charset-utf-8"</span>);</span><br><span class="line">        <span class="comment">//通过数据组装html</span></span><br><span class="line">        <span class="keyword">let</span> htmlStr =<span class="string">`&lt;ul class="news-list"&gt;`</span></span><br><span class="line">        newsData.forEach(<span class="function"><span class="params">v</span> =&gt;</span> &#123;</span><br><span class="line">            htmlStr += <span class="string">`&lt;li class="news"&gt;</span></span><br><span class="line"><span class="string">                &lt;a href="javascript:;"&gt;</span></span><br><span class="line"><span class="string">                    &lt;img src="<span class="subst">$&#123;v.imgUrl&#125;</span>" alt=""&gt;</span></span><br><span class="line"><span class="string">                &lt;/a&gt;</span></span><br><span class="line"><span class="string">                &lt;div&gt;</span></span><br><span class="line"><span class="string">                    &lt;h3&gt;</span></span><br><span class="line"><span class="string">                        &lt;a href="/detail?id=<span class="subst">$&#123;v.id&#125;</span>"&gt;<span class="subst">$&#123;v.title&#125;</span>&lt;/a&gt; </span></span><br><span class="line"><span class="string">                    &lt;/h3&gt;</span></span><br><span class="line"><span class="string">                    &lt;div class="info"&gt;</span></span><br><span class="line"><span class="string">                        &lt;span class="tips"&gt;&lt;span&gt;<span class="subst">$&#123;v.type&#125;</span>&lt;/span&gt;&lt;span&gt;<span class="subst">$&#123;v.country&#125;</span>&lt;/span&gt;&lt;/span&gt;</span></span><br><span class="line"><span class="string">                        &lt;!-- &lt;span class="line"&gt;&lt;/span&gt; --&gt;</span></span><br><span class="line"><span class="string">                        &lt;span class="time"&gt;| &amp;nbsp;&amp;nbsp;<span class="subst">$&#123;v.addTime&#125;</span>&lt;/span&gt;</span></span><br><span class="line"><span class="string">                    &lt;/div&gt;</span></span><br><span class="line"><span class="string">                &lt;/div&gt;</span></span><br><span class="line"><span class="string">            &lt;/li&gt;`</span>;</span><br><span class="line"></span><br><span class="line">        &#125;);</span><br><span class="line">        htmlStr +=<span class="string">`&lt;/ul&gt;`</span>;</span><br><span class="line">        <span class="comment">//查找模板中的ul替换成自己组装的ul</span></span><br><span class="line">        <span class="keyword">let</span> reg = <span class="regexp">/&lt;ul\s+class=(\'|\")news-list(\'|\")\s*&gt;([\d\D]*)&lt;\/ul&gt;/</span>;</span><br><span class="line">        <span class="keyword">let</span> newResult = result.replace(reg,htmlStr);</span><br><span class="line"></span><br><span class="line">        res.write(newResult);</span><br><span class="line">        res.end();</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(pathname===<span class="string">"/detail"</span>)&#123;</span><br><span class="line">        res.setHeader(<span class="string">"content-type"</span>,<span class="string">"text/html;charset-utf-8"</span>);</span><br><span class="line">        <span class="comment">//通过点击每条数据的id找到对应的详情数据</span></span><br><span class="line">        <span class="comment">//获取传入的id</span></span><br><span class="line">        <span class="keyword">let</span> id=<span class="number">1</span>;</span><br><span class="line">        <span class="built_in">console</span>.log(pathObj)</span><br><span class="line">        <span class="comment">//get把参数放到了query.id里去，通过id去查找对应的数据，再通过数据去组装对应的html，然后通过正则去匹配要找到的html，然后替换html</span></span><br><span class="line">        <span class="keyword">if</span>(<span class="keyword">typeof</span> pathObj.query.id !==<span class="string">"undefined"</span>)&#123;</span><br><span class="line">            id=pathObj.query.id;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"id??"</span>,id);</span><br><span class="line">        <span class="comment">//找到对应的数据</span></span><br><span class="line">        <span class="keyword">let</span> contrentData = newsData[id<span class="number">-1</span>];</span><br><span class="line">        <span class="comment">//组装对应的html</span></span><br><span class="line">        <span class="keyword">let</span> detailHtml = <span class="string">`&lt;div class="text"&gt;</span></span><br><span class="line"><span class="string">                            &lt;h1 class="title"&gt;<span class="subst">$&#123;contrentData.title&#125;</span>&lt;/h1&gt;</span></span><br><span class="line"><span class="string">                            &lt;div class="article-info"&gt; 类型：<span class="subst">$&#123;contrentData.type&#125;</span> 时间：<span class="subst">$&#123;contrentData.addTime&#125;</span>&lt;/div&gt;</span></span><br><span class="line"><span class="string">                            &lt;p class="content"&gt;</span></span><br><span class="line"><span class="string">                            <span class="subst">$&#123;contrentData.content&#125;</span></span></span><br><span class="line"><span class="string">                            &lt;/p&gt;</span></span><br><span class="line"><span class="string">                        &lt;/div&gt;`</span>;</span><br><span class="line">        <span class="comment">//替换模板中对应的位置</span></span><br><span class="line">        <span class="comment">// 显示详细页面</span></span><br><span class="line">        <span class="keyword">let</span> detailData = fs.readFileSync(<span class="string">"./views/detail.html"</span>).toString();</span><br><span class="line">        <span class="keyword">let</span> reg = <span class="regexp">/&lt;div\s+class=(\'|\")text(\'|\")\s*&gt;([\d\D]*)&lt;\/div&gt;/</span>;</span><br><span class="line">        <span class="keyword">let</span> newHtml = detailData.replace(reg,detailHtml);</span><br><span class="line">        res.write(newHtml);</span><br><span class="line">        res.end();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(pathname!==<span class="string">"/favicon.ico"</span>)&#123;</span><br><span class="line">            <span class="keyword">let</span> extName = path.extname(pathname);<span class="comment">//获取文件扩展名</span></span><br><span class="line">            <span class="built_in">console</span>.log(extName);</span><br><span class="line">            res.setHeader(<span class="string">"content-type"</span>,mime[extName]);</span><br><span class="line">            <span class="keyword">let</span> data = fs.readFileSync(<span class="string">"./views"</span>+pathname);</span><br><span class="line">            res.write(data);</span><br><span class="line">            res.end();</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">server.listen(<span class="number">3000</span>);</span><br></pre></td></tr></table></figure>
-<h2 id="第一节总结"><a href="#第一节总结" class="headerlink" title="第一节总结"></a>第一节总结</h2><ul>
-<li>模块化的概念</li>
-<li>nodejs的路由，通过pathname和路径进行区分</li>
-<li>node需要每个文件都进行加载，不加载文件就会读不到，加载要注意设置对应的头部<code>content-type</code></li>
-<li>nodejs加载文件注意点：要先读取，再写入</li>
-</ul>
-
-          
+          <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>Node.js 诞生于2009年，Node.js采用C++语言编写而成，是 一个Javascript的运行环境。Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境 ，让JavaScript的运行脱离浏览器端，可以使用JavaScript语言 书写服务器端代码。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/08/19/nodejs01/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -665,7 +580,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/06/25/git/" itemprop="url">git 学习笔记</a></h1>
+                <a class="post-title-link" href="/2019/06/25/git/" itemprop="url">Git 学习笔记一</a></h1>
         
 
         <div class="post-meta">
@@ -1578,7 +1493,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
