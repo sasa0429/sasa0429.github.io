@@ -3,6 +3,123 @@
   
     
     <entry>
+      <title><![CDATA[Git 知识点整理]]></title>
+      <url>/2019/08/26/gitNote/</url>
+      <content type="html"><![CDATA[<h1 id="什么是版本控制"><a href="#什么是版本控制" class="headerlink" title="什么是版本控制"></a>什么是版本控制</h1><h1 id="什么是Git"><a href="#什么是Git" class="headerlink" title="什么是Git"></a>什么是Git</h1><ul>
+<li>人工版本控制器</li>
+</ul>
+<ul>
+<li>版本控制工具</li>
+<li>常见版本控制工具</li>
+</ul>
+<a id="more"></a> 
+<h1 id="如何工作"><a href="#如何工作" class="headerlink" title="如何工作"></a>如何工作</h1><h2 id="Git文件的生命周期"><a href="#Git文件的生命周期" class="headerlink" title="Git文件的生命周期"></a>Git文件的生命周期</h2><h2 id="状态"><a href="#状态" class="headerlink" title="状态"></a>状态</h2><ul>
+<li>未追踪        Untracked</li>
+</ul>
+<ul>
+<li>已修改        modified</li>
+<li>已暂存        staged</li>
+<li>已提交        committed</li>
+</ul>
+<h2 id="区域"><a href="#区域" class="headerlink" title="区域"></a>区域</h2><ul>
+<li>工作目录</li>
+</ul>
+<ul>
+<li>暂存区域</li>
+</ul>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><h2 id="–global"><a href="#–global" class="headerlink" title="–global"></a>–global</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.email</span><br></pre></td></tr></table></figure>
+<h2 id="检查配置"><a href="#检查配置" class="headerlink" title="检查配置"></a>检查配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --list</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config user.name</span><br></pre></td></tr></table></figure>
+<h1 id="创建本地仓库-repository"><a href="#创建本地仓库-repository" class="headerlink" title="创建本地仓库  - repository"></a>创建本地仓库  - repository</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
+<h1 id="工作流和基本操作"><a href="#工作流和基本操作" class="headerlink" title="工作流和基本操作"></a>工作流和基本操作</h1><h2 id="查看工作区文件状态"><a href="#查看工作区文件状态" class="headerlink" title="查看工作区文件状态"></a>查看工作区文件状态</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br></pre></td></tr></table></figure>
+<h2 id="内容从工作区添加到暂存区"><a href="#内容从工作区添加到暂存区" class="headerlink" title="内容从工作区添加到暂存区"></a>内容从工作区添加到暂存区</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br></pre></td></tr></table></figure>
+<h2 id="从暂存区提交到本地Git仓库"><a href="#从暂存区提交到本地Git仓库" class="headerlink" title="从暂存区提交到本地Git仓库"></a>从暂存区提交到本地Git仓库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit</span><br></pre></td></tr></table></figure>
+<p>​    提交备注         </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit</span><br></pre></td></tr></table></figure>
+<h3 id="修改默认编辑器"><a href="#修改默认编辑器" class="headerlink" title="修改默认编辑器"></a>修改默认编辑器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config core.editor notepad</span><br><span class="line">$ git config --global core.editor &quot;code  --wait&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="单行备注"><a href="#单行备注" class="headerlink" title="单行备注"></a>单行备注</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m 备注信息</span><br></pre></td></tr></table></figure>
+<h2 id="查看提交日志"><a href="#查看提交日志" class="headerlink" title="查看提交日志"></a>查看提交日志</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git log</span><br><span class="line">$ git log --oneline</span><br></pre></td></tr></table></figure>
+<h2 id="回退"><a href="#回退" class="headerlink" title="回退"></a>回退</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset</span><br></pre></td></tr></table></figure>
+<h3 id="回退版本"><a href="#回退版本" class="headerlink" title="回退版本"></a>回退版本</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard HEAD/commitID</span><br></pre></td></tr></table></figure>
+<h3 id="撤销暂存区内容"><a href="#撤销暂存区内容" class="headerlink" title="撤销暂存区内容"></a>撤销暂存区内容</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git reset HEAD/commitID 文件</span><br><span class="line">$ git checkout -- 文件</span><br></pre></td></tr></table></figure>
+<h2 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git rm 文件</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>只删除git仓库文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm --cached 文件</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="追加提交"><a href="#追加提交" class="headerlink" title="追加提交"></a>追加提交</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit --amend -m 提交备注</span><br></pre></td></tr></table></figure>
+<h2 id="比较"><a href="#比较" class="headerlink" title="比较"></a>比较</h2><h3 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git diff 文件</span><br></pre></td></tr></table></figure>
+<h3 id="暂存区和仓库"><a href="#暂存区和仓库" class="headerlink" title="暂存区和仓库"></a>暂存区和仓库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git diff git diff --cached [commitId] 文件</span><br></pre></td></tr></table></figure>
+<h3 id="工作区和仓库"><a href="#工作区和仓库" class="headerlink" title="工作区和仓库"></a>工作区和仓库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git diff HEAD/commitId 文件</span><br></pre></td></tr></table></figure>
+<h3 id="仓库不同版本"><a href="#仓库不同版本" class="headerlink" title="仓库不同版本"></a>仓库不同版本</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git diff commitId1 commitId2</span><br></pre></td></tr></table></figure>
+<h1 id="问题：乱码"><a href="#问题：乱码" class="headerlink" title="问题：乱码"></a>问题：乱码</h1><h2 id="中文乱码"><a href="#中文乱码" class="headerlink" title="中文乱码"></a>中文乱码</h2><h2 id="git-status-乱码"><a href="#git-status-乱码" class="headerlink" title="git status 乱码"></a>git status 乱码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global core.quotepath false</span><br></pre></td></tr></table></figure>
+<h3 id="终端乱码"><a href="#终端乱码" class="headerlink" title="终端乱码"></a>终端乱码</h3><p>​    菜单  -&gt; 设置 -&gt; 文本 -&gt; 本地 / 编码</p>
+<p>#分支</p>
+<h2 id="查看分支"><a href="#查看分支" class="headerlink" title="查看分支"></a>查看分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure>
+<h2 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch 分支名</span><br></pre></td></tr></table></figure>
+<h2 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout 分支名</span><br></pre></td></tr></table></figure>
+<h2 id="创建并切换分支"><a href="#创建并切换分支" class="headerlink" title="创建并切换分支"></a>创建并切换分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b 分支名</span><br></pre></td></tr></table></figure>
+<h2 id="分支合并"><a href="#分支合并" class="headerlink" title="分支合并"></a>分支合并</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git merge 分支名</span><br></pre></td></tr></table></figure>
+<h3 id="查看已经合并的分支"><a href="#查看已经合并的分支" class="headerlink" title="查看已经合并的分支"></a>查看已经合并的分支</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch --merged</span><br></pre></td></tr></table></figure>
+<h3 id="查看未合并的分支"><a href="#查看未合并的分支" class="headerlink" title="查看未合并的分支"></a>查看未合并的分支</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch --no-merged</span><br></pre></td></tr></table></figure>
+<h2 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -d 分支名</span><br><span class="line">$ git branch -D 分支名 强制删除</span><br></pre></td></tr></table></figure>
+<h2 id="rebase"><a href="#rebase" class="headerlink" title="rebase"></a>rebase</h2><ul>
+<li>~  纵向 与  ^横向</li>
+</ul>
+<ul>
+<li>rebase  操作</li>
+</ul>
+<h2 id="合并冲突"><a href="#合并冲突" class="headerlink" title="合并冲突"></a>合并冲突</h2><p>​    查看冲突文件 - 修复冲突内容 - 提交</p>
+<h2 id="版本标签"><a href="#版本标签" class="headerlink" title="版本标签"></a>版本标签</h2><h3 id="版本号"><a href="#版本号" class="headerlink" title="版本号"></a>版本号</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git tag</span><br></pre></td></tr></table></figure>
+<h3 id="特定历史版本"><a href="#特定历史版本" class="headerlink" title="特定历史版本"></a>特定历史版本</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git tag -a v1.0.0 HEAD/commitId</span><br></pre></td></tr></table></figure>
+<h1 id="协同开发"><a href="#协同开发" class="headerlink" title="协同开发"></a>协同开发</h1><h2 id="github"><a href="#github" class="headerlink" title="github"></a>github</h2><ul>
+<li><p>注册账号</p>
+</li>
+<li><p>生成SSH密钥</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;email@qq.com&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加代理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ eval $(ssh-agent -s)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加私钥</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-add 私钥路径</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在github上添加公钥</p>
+<ul>
+<li>个人中心 -&gt; 设置  -&gt; ssh -&gt; 添加</li>
+</ul>
+</li>
+<li><p>测试</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="github远程"><a href="#github远程" class="headerlink" title="github远程"></a>github远程</h2><h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin git@github.com:githubusername/projectname.git</span><br></pre></td></tr></table></figure>
+<h3 id="提交（同步）远程"><a href="#提交（同步）远程" class="headerlink" title="提交（同步）远程"></a>提交（同步）远程</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master</span><br><span class="line">$ git push origin master</span><br></pre></td></tr></table></figure>
+<h3 id="远程分支"><a href="#远程分支" class="headerlink" title="远程分支"></a>远程分支</h3><h4 id="提交到远程（分支）"><a href="#提交到远程（分支）" class="headerlink" title="提交到远程（分支）"></a>提交到远程（分支）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin [本地分支名称]:[远程分支名称]</span><br></pre></td></tr></table></figure>
+<h4 id="远程先创建好分支然后拉取到本地"><a href="#远程先创建好分支然后拉取到本地" class="headerlink" title="远程先创建好分支然后拉取到本地"></a>远程先创建好分支然后拉取到本地</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b [本地分支名称] origin/[远程分支名称]</span><br></pre></td></tr></table></figure>
+<h4 id="拉取远程分支到本地"><a href="#拉取远程分支到本地" class="headerlink" title="拉取远程分支到本地"></a>拉取远程分支到本地</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull origin [远程分支名称]:[本地分支名称]</span><br></pre></td></tr></table></figure>
+<h4 id="查看远程仓库"><a href="#查看远程仓库" class="headerlink" title="查看远程仓库"></a>查看远程仓库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote show origin</span><br></pre></td></tr></table></figure>
+<h4 id="查看本地分支"><a href="#查看本地分支" class="headerlink" title="查看本地分支"></a>查看本地分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure>
+<h4 id="查看远程分支"><a href="#查看远程分支" class="headerlink" title="查看远程分支"></a>查看远程分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -r</span><br></pre></td></tr></table></figure>
+<h4 id="查看所有分支"><a href="#查看所有分支" class="headerlink" title="查看所有分支"></a>查看所有分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -a</span><br></pre></td></tr></table></figure>
+<h4 id="删除本地分支"><a href="#删除本地分支" class="headerlink" title="删除本地分支"></a>删除本地分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -d [本地分支名称]</span><br></pre></td></tr></table></figure>
+<h4 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin --delete [远程分支名称]</span><br><span class="line">$ git push origin :[远程分支名称]</span><br></pre></td></tr></table></figure>
+<h4 id="设置默认提交分支"><a href="#设置默认提交分支" class="headerlink" title="设置默认提交分支"></a>设置默认提交分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch --set-upstream-to=origin/远程分支名称</span><br></pre></td></tr></table></figure>
+<h1 id="工作流-git-work-flow"><a href="#工作流-git-work-flow" class="headerlink" title="工作流       - git work flow"></a>工作流       - git work flow</h1><h1 id="GUI工具"><a href="#GUI工具" class="headerlink" title="GUI工具"></a>GUI工具</h1>]]></content>
+      
+        
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Git 学习笔记二]]></title>
       <url>/2019/08/25/git2/</url>
       <content type="html"><![CDATA[<p>本文是第二次学习 Git 做的一些详细的笔记，相信每次学习都有更深入的收获。</p>

@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2019/08/26/gitNote/</loc>
+    
+    <lastmod>2019-08-26T13:33:00.534Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/08/25/git2/</loc>
     
-    <lastmod>2019-08-25T13:38:19.333Z</lastmod>
+    <lastmod>2019-08-25T14:27:19.606Z</lastmod>
     
   </url>
   
